@@ -30,9 +30,6 @@ module.exports = {
         "./src/app/**/*.{js,ts,jsx,tsx}",
     ],
 
-
-    // faf6fe
-
     theme: {
         extend: {
             typography: () => ({
