@@ -44,7 +44,7 @@ function Footer() {
                     </div>
                 </div>
             </footer>
-            <footer className="flex flex-col px-10 py-4 border-t bg-black text-white items-center child:m-2 w-full  ">
+            <footer className="flex flex-col px-10 py-4 border-t  items-center child:m-2 w-full  ">
                 <div>
                     © {new Date().getFullYear()} Anjani Enterprises! All Rights Reserved.
                 </div>

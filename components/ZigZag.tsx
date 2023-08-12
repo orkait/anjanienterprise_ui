@@ -2,19 +2,32 @@
 import Image from 'next/image'
 
 export default function Zigzag({ zigzagSectionHeader, zigzagSectionHeaderItems }) {
+
+    const FeatureImage = (item, index: number) => {
+        console.log("item -->", item)
+        return (
+            <div
+                className={`max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 ${index % 2 === 1 ? 'rtl' : ''}`}
+                data-aos="fade-up"
+            >
+                <Image
+                    className="max-w-full mx-auto md:max-w-none max-h-[400px] "
+                    src={item.image}
+                    width={540}
+                    height={400}
+                    alt={`Features ${index + 1}`}
+                />
+            </div>
+        )
+    }
+
     return (
         <section>
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 <div className="py-12 md:py-20 border-t border-gray-800">
                     {/* Section header */}
                     <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-                        {zigzagSectionHeader.tag && (
-                            <div className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">
-                                {zigzagSectionHeader.tag}
-                            </div>
-                        )}
-                        <h1 className="h2 mb-4">{zigzagSectionHeader.title}</h1>
-                        <p className="text-xl text-gray-400">{zigzagSectionHeader.description}</p>
+                        <h1 className="h1 mb-4 text-2xl font-extrabold aos-init aos-animate">{zigzagSectionHeader.title}</h1>
                     </div>
 
                     {/* Items */}
@@ -31,10 +44,10 @@ export default function Zigzag({ zigzagSectionHeader, zigzagSectionHeaderItems }
                                             data-aos="fade-up"
                                         >
                                             <Image
-                                                className="max-w-full mx-auto md:max-w-none h-auto"
+                                                className="max-w-full mx-auto md:max-w-none object-scale-down shadow-2xl "
                                                 src={item.image}
                                                 width={540}
-                                                height={405}
+                                                height={400}
                                                 alt={`Features ${index + 1}`}
                                             />
                                         </div>
@@ -47,12 +60,8 @@ export default function Zigzag({ zigzagSectionHeader, zigzagSectionHeaderItems }
                                     data-aos={index % 2 === 0 ? 'fade-right' : 'fade-left'}
                                 >
                                     <div className="md:pl-4 lg:pl-12 xl:pl-16">
-                                        {item.subtitle && (
-                                            <div className="font-architects-daughter text-xl text-purple-600 mb-2">
-                                                {item.subtitle}
-                                            </div>
-                                        )}
-                                        <h3 className="h3 mb-3">{item.title}</h3>
+
+                                        <h2 className='font-bold text-lg '>{item.title}</h2>
                                         <p className="text-xl text-gray-400 mb-4">{item.description}</p>
                                         <ul className="text-lg text-gray-400 -mb-2">
                                             {item.features.map((feature, i) => (
@@ -78,10 +87,10 @@ export default function Zigzag({ zigzagSectionHeader, zigzagSectionHeaderItems }
                                             data-aos="fade-up"
                                         >
                                             <Image
-                                                className="max-w-full mx-auto md:max-w-none h-auto"
+                                                className="max-w-full mx-auto md:max-w-none object-scale-down shadow-2xl "
                                                 src={item.image}
                                                 width={540}
-                                                height={405}
+                                                height={400}
                                                 alt={`Features ${index + 1}`}
                                             />
                                         </div>

@@ -16,15 +16,15 @@ function Features({ featureSectionHeader, featureSectionItem }) {
                     <div className="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-16 items-start md:max-w-2xl lg:max-w-none" data-aos-id-blocks>
                         {featureSectionItem.map((item, index) => (
                             <div
-                                className="relative flex flex-col items-center"
+                                className="relative flex flex-col items-center "
                                 data-aos="fade-up"
-                                data-aos-delay={100 * index}
+                                data-aos-delay={index === 0 ? 100: (500 * index)}
                                 data-aos-anchor="[data-aos-id-blocks]"
                                 key={index}
                             >
                                 <FontAwesomeIcon
                                     icon={item.icon}
-                                    className="w-12 h-12 text-purple-600"
+                                    className="w-12 h-12 mb-4"
                                 />
 
                                 <h4 className="h4 mb-2">{item.title}</h4>

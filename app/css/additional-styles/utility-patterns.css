@@ -59,8 +59,3 @@
 .form-select {
 	@apply pr-10;
 }
-
-.form-checkbox,
-.form-radio {
-	@apply text-purple-600;
-}

@@ -1,10 +1,12 @@
 import VideoThumb from '@/public/images/hero-image-01.jpg'
 import ModalVideo from '@/components/ModalVideo'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 const heroData = {
     title: 'Anjani Enterprise: Opening Doors to Elegance and Quality',
     company: 'Anjani Enterprise is a renowned company that specializes in manufacturing and supplying high-quality door handles and related hardware. They offer a diverse range of door handle solutions, including metal, stainless steel, and plastic handles, catering to both residential and commercial customers.',
-    description : "Anjani Enterprise: Your Gateway to Stylish and Durable Door Handles. Offering a wide range of high-quality options for residential and commercial needs. Elevate your space with elegance and reliability."
+    description: "Anjani Enterprise: Your Gateway to Stylish and Durable Door Handles. Offering a wide range of high-quality options for residential and commercial needs. Elevate your space with elegance and reliability."
 }
 
 export default function Hero() {
@@ -30,7 +32,7 @@ export default function Hero() {
 
                     {/* Section header */}
                     <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-                        <h1 className="h1 mb-4  text-2xl font-extrabold text-blue-500 " data-aos="fade-up">
+                        <h1 className="h1 mb-4  text-2xl font-extrabold  " data-aos="fade-up">
                             {heroData.title}
                         </h1>
                         <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">
@@ -38,13 +40,13 @@ export default function Hero() {
                         </p>
                         <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
                             <div data-aos="fade-up" data-aos-delay="400">
-                                <a className="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0" href="#0">
-                                    Get started
-                                </a>
-                            </div>
-                            <div data-aos="fade-up" data-aos-delay="600">
-                                <a className="btn text-white bg-gray-700 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#0">
-                                    Learn more
+                                <a className="btn bg-black text-white hover:bg-white hover:text-black 
+                                    hover:scale-125 ease-in-out duration-300
+                                w-full mb-4 sm:w-auto sm:mb-0" href="#0">
+                                    Explore Our Products
+                                    <FontAwesomeIcon
+                                        icon={faArrowRight}
+                                    />
                                 </a>
                             </div>
                         </div>

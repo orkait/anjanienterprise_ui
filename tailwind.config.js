@@ -43,17 +43,7 @@ module.exports = {
 					800: "#25282C",
 					900: "#151719",
 				},
-				purple: {
-					100: "#F4F4FF",
-					200: "#E2E1FF",
-					300: "#CBCCFF",
-					400: "#ABABFF",
-					500: "#8D8DFF",
-					600: "#5D5DFF",
-					700: "#4B4ACF",
-					800: "#38379C",
-					900: "#262668",
-				},
+				
 			},
 			spacing: {
 				"9/16": "56.25%",
@@ -127,14 +117,7 @@ module.exports = {
 			{
 				light: {
 					...require("daisyui/src/theming/themes")[
-						"[data-theme=light]"
-					],
-				},
-			},
-			{
-				dark: {
-					...require("daisyui/src/theming/themes")[
-						"[data-theme=night]"
+						"[data-theme=corporate]"
 					],
 				},
 			},

@@ -20,3 +20,12 @@
 [x-cloak=""] {
 	display: none;
 }
+
+
+body{
+    background-image: url("/svgs/shiny_overlay.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}

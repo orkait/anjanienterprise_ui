@@ -14,9 +14,9 @@ function Blocks({ blockSectionHeader, blockSectionItem }) {
                     <div className="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-16 items-start md:max-w-2xl lg:max-w-none" data-aos-id-blocks>
                         {blockSectionItem.map((item, index) => (
                             <div
-                                className="relative flex flex-col items-center"
+                                className="relative flex flex-col items-center  "
                                 data-aos="fade-up"
-                                data-aos-delay={100 * index}
+                                data-aos-delay={1000 * index}
                                 data-aos-anchor="[data-aos-id-blocks]"
                                 key={index}
                             >
