@@ -27,23 +27,6 @@ const footerData = {
             ]
 
         },
-        {
-            title: 'Company',
-            items: [
-                {
-                    title: 'Web Studio',
-                    link: '/'
-                },
-                {
-                    title: 'DynamicBox Flex',
-                    link: '/'
-                },
-                {
-                    title: 'Programming Forms',
-                    link: '/'
-                }
-            ]
-        }
     ],
     company: {
         info: `Thank you for choosing ${env.APP}. We take pride in delivering exceptional products and service. Our commitment to quality craftsmanship and customer satisfaction is unwavering. Explore our premium range of products and elevate your spaces with style and durability. We look forward to being a part of your journey`,

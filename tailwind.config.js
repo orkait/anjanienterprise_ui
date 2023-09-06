@@ -17,7 +17,7 @@ const extendedTailwind = plugin(function ({ addComponents }) {
 			alignItems: "center",
 		},
 		".test": {
-			border: "1px solid black !important",
+			border: "1px solid red !important",
 		},
 	});
 });

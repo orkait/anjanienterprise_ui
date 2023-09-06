@@ -1,6 +1,6 @@
-import FeatImage01 from '@/public/images/features-03-image-01.png';
-import FeatImage02 from '@/public/images/features-03-image-02.png';
-import FeatImage03 from '@/public/images/features-03-image-03.png';
+import FeatImage01 from '@/public/images/features-03-image-04.png';
+import FeatImage02 from '@/public/images/features-03-image-04.png';
+import FeatImage03 from '@/public/images/features-03-image-04.png';
 
 export const zigzagSectionHeader = {
     title: 'Anjani Enterprise is a leading manufacturer and supplier of Hardware Fitting in India.',
